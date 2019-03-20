@@ -10,7 +10,7 @@ function GetQueryString(name)
      if(r!=null)return  unescape(r[2]); return null;
 }
     var vid = GetQueryString("url");
-	var index = vid.indexOf("https:");
+	var index = vid.indexOf("https://");
 	if(index == 0&&document.location.protocol=="http:"){
 		document.location.protocol="https:";
 	}else
