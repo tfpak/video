@@ -20,7 +20,15 @@ function GetQueryString(name)
 	<!--alert("url="+vid+",loc="+loc);-->
 </script>
 
-<script>
+<script type="text/javascript">
+	var child1 = queue.loadFile(file1);
+        var child2 = queue.loadFile(file2);
+
+// child item is complete
+child1.on("complete", function() { ... });
+
+// all items are complete
+queue.on("complete", function() { ... })
 if(vid==null){
 alert("url的值为空，要加上m3u8格式的视频网址（例如）：/?url=https://video.letv-cdn.com/20171124/Y2ne5XAt/index.m3u8")
 }
@@ -50,7 +58,6 @@ body { height: 100%; padding: 0; margin: 0; }
 <!--<iframe id="WANG" scrolling="no" allowtransparency="true" frameborder="0"
             src="//jx.dy-jx.com/?url=http://"width="100%" scrolling="no" height="100%" align="middle" frameborder="no" hspace="0" vspace="0" allowFullscreen="true" marginheight="0" marginwidth="0" name="tv"></iframe>-->
 </body>
-<script type="text/javascript" src="https://c.cnzz.com/core.php?web_id=1262233409&t=z"></script>
     <script type="text/javascript"> function QQ(url) {
             $('#WANG').attr('src', decodeURIComponent(decodeURIComponent(url))).show();
     }</script>
