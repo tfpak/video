@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
@@ -18,7 +18,7 @@ function GetQueryString(name)
 	{
 
 	}
-	alert("url="+vid+",loc="+loc);
+	<!--alert("url="+vid+",loc="+loc);-->
 </script>
 
 <script src="http://www.webkaka.com/script/jQuery-1.4.2.min.js" type="text/javascript"></script>
@@ -29,7 +29,7 @@ alert("url的值为空，要加上m3u8格式的视频网址（例如）：/?url=
   var jul = 'https://tfpak.github.io/v/m3u8.html?url=';
   var vul = 'https://video.letv-cdn.com/20171124/Y2ne5XAt/index.m3u8'
 $(document).ready(function(){
-  $('#barframe').attr('src','https://tfpak.github.io/v/m3u8.html?url=https://video.letv-cdn.com/20171124/Y2ne5XAt/index.m3u8');//jul+vid
+  $('#barframe').attr('src',jul+vid);
   });
 </script>
 <style>
@@ -51,4 +51,8 @@ body { height: 100%; padding: 0; margin: 0; }
 <!--<iframe id="WANG" scrolling="no" allowtransparency="true" frameborder="0"
             src="//jx.dy-jx.com/?url=http://"width="100%" scrolling="no" height="100%" align="middle" frameborder="no" hspace="0" vspace="0" allowFullscreen="true" marginheight="0" marginwidth="0" name="tv"></iframe>-->
 </body>
+<script type="text/javascript" src="https://c.cnzz.com/core.php?web_id=1262233409&t=z"></script>
+    <script type="text/javascript"> function QQ(url) {
+            $('#WANG').attr('src', decodeURIComponent(decodeURIComponent(url))).show();
+    }</script>
 </html>
