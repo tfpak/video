@@ -1,0 +1,1 @@
+﻿document.writeln("<script src='/js/videoApi.json'><\/script>");   
